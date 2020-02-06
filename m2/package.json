@@ -1,0 +1,17 @@
+{
+  "name": "m2",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "index.js",
+  "dependencies": {
+    "m1": "0.1.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^7.1.1"
+  },
+  "scripts": {
+    "build": "rollup index.js --file dist/bundle.js --format esm --external m1",
+    "build-c": "rollup -c"
+  },
+  "license": "MIT"
+}

@@ -1,4 +1,12 @@
 {
   "private": true,
-  "workspaces": ["module*"]
+  "workspaces": [
+    "m1",
+    "m2"
+  ],
+  "scripts": {
+    "clean": "rm -R m2/dist",
+    "build": "yarn workspace m2 build && yarn workspace m2 build-c"
+  },
+  "license": "MIT"
 }
